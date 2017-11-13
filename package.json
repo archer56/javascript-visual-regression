@@ -1,0 +1,25 @@
+{
+  "name": "react-visual-regression",
+  "version": "1.0.0",
+  "description": "Visual regression tool for react components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/archer56/react-visual-regression.git"
+  },
+  "bin": {
+    "ben": "./react-visual-regression.js"
+  },
+  "author": "Ben Archer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/archer56/react-visual-regression/issues"
+  },
+  "homepage": "https://github.com/archer56/react-visual-regression#readme",
+  "dependencies": {
+    "meow": "^3.7.0"
+  }
+}
