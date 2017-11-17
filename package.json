@@ -1,6 +1,6 @@
 {
   "name": "react-visual-regression",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Visual regression tool for react components",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,21 @@
     "url": "https://github.com/archer56/react-visual-regression/issues"
   },
   "homepage": "https://github.com/archer56/react-visual-regression#readme",
+  "engines": {
+    "node": ">=7.0.0"
+  },
   "dependencies": {
-    "meow": "^3.7.0"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chrome-launcher": "^0.8.1",
+    "chrome-remote-interface": "^0.25.3",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1"
   }
 }
