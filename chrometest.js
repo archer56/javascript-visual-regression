@@ -1,6 +1,4 @@
-require('babel-register')({
-  presets:['react']
-});
+
 
 const chromeLauncher = require('chrome-launcher');
 const CDP = require('chrome-remote-interface');
@@ -9,7 +7,8 @@ const containerUrl = `file:///${__dirname}/lib/container.html`;
 const React = require('react');
 const ReactDOMServer = require('react-dom/server');
 
-const component = require('./testComponent');
+import component from './testComponent';
+
 
 (async function() {
   async function launchChrome() {
@@ -39,10 +38,8 @@ const component = require('./testComponent');
   });
 
   Page.loadEventFired(async() => {
-    const script1 = "document.querySelector('html').textContent";
-    console.log(component)
     const renderedComponent = ReactDOMServer.renderToStaticMarkup(React.createElement(component));
-    console.log('ben', renderedComponent);
+    console.log('renderedComponent', renderedComponent);
     const injectedRenderedComponent = `document.getElementById('componentHousing').innerHTML = "${renderedComponent}"`;
     // Evaluate script1
     const result = await Runtime.evaluate({
