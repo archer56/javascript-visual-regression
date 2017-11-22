@@ -4,7 +4,7 @@ import React, {PureComponent} from 'react';
   render() {
     return (
       <div>
-        <h1>Some awesome Text lol</h1>
+        <h1>Some awesome Text, hello liam!!</h1>
       </div>
     )
   }
