@@ -11,7 +11,7 @@
     "url": "git+https://github.com/archer56/react-visual-regression.git"
   },
   "bin": {
-    "ben": "./bin/react-visual-regression.js"
+    "jvr": "./bin/react-visual-regression.js"
   },
   "author": "Ben Archer",
   "license": "MIT",
