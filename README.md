@@ -15,8 +15,9 @@ renderer = (component, props) => {
 It must return rendered component as a string.
 
 ## config ( jvr.js )
+Config must return a function, which in turn returns the config as an object.
 ```
-module.exports = {
+module.exports = () => {
   baseImagesSrc: '/images/base',
   saveImageLocation: '/images/', //if you want to save the images relative to the location running. JVR will add a hashed folder
   saveImageScript: (images) => {}, //if you want to save the images with ftp etc, this function will pass you the image.
@@ -61,15 +62,6 @@ module.exports = {
 ### from the command line ( recommended )
 ```
   jvr
-```
-
-### within a node application
-```
-import jvr from 'jvr';
-
-jvr({
-  config: {...},
-})
 ```
 
 ## CI
