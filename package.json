@@ -1,5 +1,5 @@
 {
-  "name": "javascipt-visual-regression",
+  "name": "javascript-visual-regression",
   "version": "0.1.0",
   "description": "Visual regression tool for react components",
   "main": "./lib/index.js",
