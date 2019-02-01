@@ -6,7 +6,7 @@ Visual regression tool for react components
 ## config ( jvr.js )
 Config must return a function, which in turn returns the config as an object.
 ```
-module.exports = () => {
+module.exports = () => ({
   baseImagesSrc: '/images/base',
   saveImageLocation: '/images/', //if you want to save the images relative to the location running. JVR will add a hashed folder
   saveImageScript: (images) => {}, //if you want to save the images with ftp etc, this function will pass you the image.
@@ -34,16 +34,16 @@ module.exports = () => {
       title: 'should screenshot a live page',
       testType: 'website',
       url: 'https://www.google.com',
-      beforeTest: () => {console.log('this will run before the screenshot has taken, but after the page has loaded')}
-      hideElements: ['.cookie-banner', '.carousel']
+      beforeTest: () => {console.log('this will run before the screenshot has taken, but after the page has loaded')},
+      hideElements: ['.cookie-banner', '.carousel'],
     }
   ],
   screenWidths: [
-    {name: 'mobile', width: 320}
-    {name: 'tablet', width: 720}
-    {name: 'desktop', width: 1200}
+    {name: 'mobile', width: 320},
+    {name: 'tablet', width: 720},
+    {name: 'desktop', width: 1200},
   ],
-}
+});
 ```
 
 ## Usage
