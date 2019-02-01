@@ -60,6 +60,12 @@ module.exports = () => {
 ## Usage
 
 ### from the command line ( recommended )
+#### To generate the base imageSaveLocation
+```
+  jvr --generateBase
+```
+
+#### To run the tests
 ```
   jvr
 ```
