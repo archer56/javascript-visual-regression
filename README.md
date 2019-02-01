@@ -22,7 +22,7 @@ module.exports = () => {
   saveImageLocation: '/images/', //if you want to save the images relative to the location running. JVR will add a hashed folder
   saveImageScript: (images) => {}, //if you want to save the images with ftp etc, this function will pass you the image.
   reportSrc: '/report',
-  comparisonTolerance: 80, //percentage difference
+  comparisonTolerance: 0.05, //percentage difference of 5%
   tests: [
     {
       title: 'should screenshot a react component',
