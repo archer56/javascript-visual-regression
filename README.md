@@ -3,7 +3,7 @@ Visual regression tool for react components
 
 ## NOTE: THIS IS CURRENTLY IN DEV, CONFIG IS NOT FULLY IMPLEMENTED AND API MAY CHANGE UNTIL FIRST MAJOR RELEASE
 
-## config ( jvr.js )
+## config ( jvr.config.js )
 Config must return a function, which in turn returns the config as an object.
 ```
 module.exports = () => ({
