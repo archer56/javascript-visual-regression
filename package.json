@@ -30,7 +30,8 @@
     "bluebird": "^3.5.2",
     "commander": "^2.19.0",
     "del": "^3.0.0",
-    "puppeteer": "^1.9.0"
+    "fs-extra": "^7.0.1",
+    "puppeteer": "^1.14.0"
   },
   "devDependencies": {
     "prettier": "1.16.4"
