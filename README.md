@@ -7,7 +7,6 @@ Visual regression tool for react components
 Config must return a function, which in turn returns the config as an object.
 ```
 module.exports = () => ({
-  baseImagesSrc: '/images/base',
   saveImageLocation: '/images/', //if you want to save the images relative to the location running. JVR will add a hashed folder
   saveImageScript: (images) => {}, //if you want to save the images with ftp etc, this function will pass you the image.
   reportSrc: '/report',
@@ -39,9 +38,9 @@ module.exports = () => ({
     }
   ],
   screenWidths: [
-    {name: 'mobile', width: 320},
-    {name: 'tablet', width: 720},
-    {name: 'desktop', width: 1200},
+    {title: 'mobile', width: 320},
+    {title: 'tablet', width: 720},
+    {title: 'desktop', width: 1200},
   ],
 });
 ```
