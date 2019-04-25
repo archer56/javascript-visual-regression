@@ -1,6 +1,6 @@
 {
   "name": "javascript-visual-regression",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Visual regression tool for react components",
   "main": "./lib/index.js",
   "scripts": {
