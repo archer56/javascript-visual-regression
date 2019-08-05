@@ -8,6 +8,7 @@ module.exports = () => ({
   saveImageLocation: '/images/', //if you want to save the images relative to the location running. JVR will add a hashed folder
   comparisonTolerance: 0.05, //percentage difference of 5%
   noSandbox: false, //by default puppeteer will run with a sandbox. Use this with caution.
+  delay: 0, //Incase of a slow build box, a delay can be added which will delay the screenshot being taken. This allows for extra time for page painting.
   tests: [
     {
       title: 'should screenshot a live page',
