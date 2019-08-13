@@ -1,6 +1,8 @@
 # react-visual-regression
 Visual regression tool for react components
 
+On the output image, the image on the left is the base image, the image in the middle is the comparison image and the image on the right is the test image
+
 ## config ( jvr.config.js )
 Config must return a function, which in turn returns the config as an object.
 ```
